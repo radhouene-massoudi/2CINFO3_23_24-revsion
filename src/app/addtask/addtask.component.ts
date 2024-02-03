@@ -11,6 +11,7 @@ import { Task } from '../models/task';
 })
 export class AddtaskComponent {
 task:any;
+msg="";
   constructor(
     private s:ExamenService
     ,private ac:ActivatedRoute){
@@ -19,8 +20,8 @@ task:any;
 fg=new FormGroup(
  {
   title:new FormControl(''),
-  dated:new FormControl(new Date()),
-  Datef:new FormControl(new Date()),
+  dated:new FormControl(),
+  Datef:new FormControl(),
  } 
 )
 addTask(){
@@ -41,8 +42,11 @@ this.s.addTask(this.task).subscribe(
 }
 status(){
   if (this.fg.get('dated')?.value > this.fg.get('Datef')?.value){
-return true
+this.msg='dated>dateF'
+    return true
+  }else{
+    return false;
   }
-  return false;
+  
 }
 }

@@ -19,4 +19,7 @@ export class ExamenService {
   findProjectById(id:any){
     return this.http.get("http://localhost:3000/project/"+id)
   }
+  fetchTasks(){
+    return this.http.get("http://localhost:3000/task")
+  }
 }

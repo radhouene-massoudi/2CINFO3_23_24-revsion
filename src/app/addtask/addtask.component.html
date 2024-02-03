@@ -5,6 +5,12 @@
 <input type="date" formControlName="dated">
 <label>dateF</label>
 <input type="date" formControlName="Datef">
-<input type="submit" value="add task" (click)="addTask()" [disabled]="status()">
+<div *ngIf="this.fg.get('dated')?.value > this.fg.get('Datef')?.value">
+dated >dateF
+</div>
+<div *ngIf="status()">
+{{msg}}
+</div>
+<input type="submit" value="add task" (click)="addTask()" [disabled]="this.fg.get('dated')?.value > this.fg.get('Datef')?.value">
 
 </form>

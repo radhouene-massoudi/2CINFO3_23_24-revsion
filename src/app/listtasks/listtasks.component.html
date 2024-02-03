@@ -1,1 +1,7 @@
-<p>listtasks works!</p>
+<div *ngFor="let t of tasks">
+{{t.id}}
+{{t.title}}
+{{t.description}}
+{{t.status}}
+{{t.project.title}}
+</div>
