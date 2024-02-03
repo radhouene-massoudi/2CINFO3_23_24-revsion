@@ -10,10 +10,7 @@
     <label>password</label>
     <input type="text" formControlName="password">
     <div *ngIf="fg.get('password')?.invalid">
-        <div *ngIf="fg.get('password')?.errors?.['required']">
-            password is required.</div>
-        <div *ngIf="fg.get('password')?.errors?.['pattern']">
-            pattern .</div>
-    </div>
+        <app-errors [err]="fg.get('password')"></app-errors>
+       </div>
     <input type="submit" value="se connecter" [disabled]="fg.invalid" (click)="checkCredianles()">
 </form>

@@ -11,6 +11,7 @@ import { ListprojectComponent } from './listproject/listproject.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login.component';
 import { AddtaskComponent } from './addtask/addtask.component';
+import { ErrorsComponent } from './sahred/errors/errors.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AddtaskComponent } from './addtask/addtask.component';
     ListprojectComponent,
     NotfoundComponent,
     LoginComponent,
-    AddtaskComponent
+    AddtaskComponent,
+    ErrorsComponent
   ],
   imports: [
     BrowserModule,
