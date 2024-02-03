@@ -1,0 +1,19 @@
+<form [formGroup]="fg">
+    <label>username</label>
+    <input type="text" formControlName="username">
+    <div *ngIf="fg.get('username')?.invalid">
+        <div *ngIf="fg.get('username')?.errors?.['required']">
+            Username is required.</div>
+        <div *ngIf="fg.get('username')?.errors?.['minlength']">
+            minlenth .</div>
+    </div>
+    <label>password</label>
+    <input type="text" formControlName="password">
+    <div *ngIf="fg.get('password')?.invalid">
+        <div *ngIf="fg.get('password')?.errors?.['required']">
+            password is required.</div>
+        <div *ngIf="fg.get('password')?.errors?.['pattern']">
+            pattern .</div>
+    </div>
+    <input type="submit" value="se connecter" [disabled]="fg.invalid" (click)="checkCredianles()">
+</form>

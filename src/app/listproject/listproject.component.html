@@ -1,0 +1,6 @@
+<div *ngFor="let p of projects">
+{{p.id}}
+{{p.title}}
+{{p.description}}
+<input type="submit" value=" add task" (click)="goToAddTask(p.id)">
+</div>

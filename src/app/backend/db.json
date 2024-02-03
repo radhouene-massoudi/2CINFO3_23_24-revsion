@@ -1,0 +1,66 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "John Doe",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "username": "Jane Smith",
+      "password": "123"
+    }
+  ],
+  "task": [
+    {
+      "id": 1,
+      "title": "title",
+      "dateD": "12/01/2022",
+      "dateF": "12/01/2023",
+      "status": "true",
+      "project": {
+        "id": 1,
+        "title": "Project 1",
+        "description": "This is project one.",
+        "tasks": [],
+        "users": []
+      }
+    },
+    {
+      "title": "test",
+      "dated": "2024-02-03",
+      "Datef": "2024-02-04",
+      "id": 2
+    },
+    {
+      "title": "test444444444",
+      "dated": "",
+      "Datef": "",
+      "project": {
+        "id": 2,
+        "title": "Project 1",
+        "description": "This is project one.",
+        "tasks": [],
+        "users": []
+      },
+      "status": false,
+      "id": 3
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "title": "Project 1",
+      "description": "This is project one.",
+      "tasks": [],
+      "users": []
+    },
+    {
+      "id": 2,
+      "title": "Project 1",
+      "description": "This is project one.",
+      "tasks": [],
+      "users": []
+    }
+  ]
+}
